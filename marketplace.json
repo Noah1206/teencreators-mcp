@@ -1,6 +1,8 @@
 {
   "name": "teencreators-mcp-marketplace",
-  "owner": "Noah1206",
+  "owner": {
+    "name": "Noah1206"
+  },
   "description": "Marketplace for the TeenCreators MCP Agent.",
   "plugins": [
     {
