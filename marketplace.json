@@ -1,13 +1,16 @@
 {
-  "name": "TeenCreators Developer Marketplace",
-  "description": "Custom MCP tools and servers for developing the TeenCreators platform.",
+  "name": "teencreators-mcp-marketplace",
+  "owner": "Noah1206",
+  "description": "Marketplace for the TeenCreators MCP Agent.",
   "plugins": [
     {
-      "id": "teencreators-mcp",
-      "name": "TeenCreators All-in-One MCP Agent",
-      "description": "Unified agent providing product planning, backend architecture, frontend architecture, UI development, and safety moderation.",
-      "manifest": "https://YOUR_DOMAIN_OR_GITHUB/teencreators-mcp/manifest.json",
-      "tags": ["teencreators", "architecture", "backend", "frontend", "ui", "moderation"]
+      "name": "teencreators-mcp",
+      "description": "Unified multi-mode MCP agent for planning, architecture, development, and moderation.",
+      "source": {
+        "registry": {
+          "url": "https://raw.githubusercontent.com/Noah1206/teencreators-mcp/main/manifest.json"
+        }
+      }
     }
   ]
 }
