@@ -1,0 +1,41 @@
+{
+  "name": "TeenCreators MCP Agent",
+  "version": "1.0.0",
+  "description": "All-in-one multi-mode MCP agent for planning, designing, and developing the TeenCreators platform.",
+  "protocol": "0.1",
+  "runtime": {
+    "type": "node",
+    "entrypoint": "dist/index.js"
+  },
+  "permissions": {
+    "filesystem": {
+      "read": ["**/*"],
+      "write": ["**/*"]
+    }
+  },
+  "commands": {
+    "run": {
+      "description": "Run reasoning and output based on the requested mode.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "enum": [
+              "product",
+              "backend_arch",
+              "backend_dev",
+              "frontend_arch",
+              "frontend_ui",
+              "moderation"
+            ]
+          },
+          "input": {
+            "type": "string"
+          }
+        },
+        "required": ["mode", "input"]
+      }
+    }
+  }
+}

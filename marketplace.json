@@ -1,0 +1,13 @@
+{
+  "name": "TeenCreators Developer Marketplace",
+  "description": "Custom MCP tools and servers for developing the TeenCreators platform.",
+  "plugins": [
+    {
+      "id": "teencreators-mcp",
+      "name": "TeenCreators All-in-One MCP Agent",
+      "description": "Unified agent providing product planning, backend architecture, frontend architecture, UI development, and safety moderation.",
+      "manifest": "https://YOUR_DOMAIN_OR_GITHUB/teencreators-mcp/manifest.json",
+      "tags": ["teencreators", "architecture", "backend", "frontend", "ui", "moderation"]
+    }
+  ]
+}
